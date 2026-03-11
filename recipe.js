@@ -3,7 +3,7 @@ const cors = require("cors")
 
 const app = express()
 
-const {intializerDatabase} = require("../db/db.connect")
+const {intializerDatabase} = require("./db.connect")
 
 const Recipe = require("./recipe.modals")
 
