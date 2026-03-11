@@ -23,7 +23,7 @@ async function recipeData(data){
     }
 }
 
-app.post("/recipes",async(req,res) => {
+app.post("/recipesDBMS",async(req,res) => {
     try{
      const recipe = await recipeData(req.body)
     res.status(201).json({message: "data saved to the dbms.", data : recipe})
